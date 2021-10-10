@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:tns="https://example.com/gem"
+        xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="https://example.com/gem"
+        version="1.0"
+        elementFormDefault="qualified">
+    <element name="gems">
+        <complexType>
+            <sequence>
+                <element name="gem"
+                         type="tns:Gem"
+                         minOccurs="1"
+                         maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="Gem">
+        <sequence>
+            <element name="name" type="string"/>
+            <element name="preciousness" type="tns:Preciousness"/>
+            <element name="origin" type="string"/>
+            <element name="visual" type="tns:Visual"/>
+        </sequence>
+        <attribute name="value" type="positiveInteger" use="required"/>
+    </complexType>
+    <simpleType name="Preciousness">
+        <restriction base="string">
+            <enumeration value="PRECIOUS"/>
+            <enumeration value="SEMIPRECIOUS"/>
+        </restriction>
+    </simpleType>
+    <complexType name="Visual">
+        <sequence>
+            <element name="color" type="tns:Color"/>
+            <element name="transparency" type="tns:Transparency"/>
+            <element name="cuttingMethod" type="tns:CuttingMethod"/>
+        </sequence>
+    </complexType>
+    <simpleType name="Color">
+        <restriction base="string">
+            <enumeration value="RED"/>
+            <enumeration value="GREEN"/>
+            <enumeration value="BLUE"/>
+            <enumeration value="WHITE"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="Transparency">
+        <restriction base="positiveInteger">
+            <pattern value="(\d{1,2})|(100)"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="CuttingMethod">
+        <restriction base="string">
+            <enumeration value="ROSE"/>
+            <enumeration value="DIAMOND"/>
+            <enumeration value="STEPWISE"/>
+            <enumeration value="TABLE"/>
+            <enumeration value="EMERALD"/>
+            <enumeration value="ASHER"/>
+            <enumeration value="WEDGES"/>
+        </restriction>
+    </simpleType>
+</schema>

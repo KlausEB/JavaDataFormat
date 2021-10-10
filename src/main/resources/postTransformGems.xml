@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><origin>
+    <gem>
+        <name>Diamond</name>
+        <preciousness>PRECIOUS</preciousness>
+        <origin>Russia, Perm province</origin>
+        <visual>
+            <color>WHITE</color>
+            <transparency>90</transparency>
+            <cuttingMethod>DIAMOND</cuttingMethod>
+        </visual>
+    </gem>
+    <gem>
+        <name>Emerald</name>
+        <preciousness>PRECIOUS</preciousness>
+        <origin>Colombia</origin>
+        <visual>
+            <color>GREEN</color>
+            <transparency>60</transparency>
+            <cuttingMethod>ROSE</cuttingMethod>
+        </visual>
+    </gem>
+    <gem>
+        <name>Garnet</name>
+        <preciousness>SEMIPRECIOUS</preciousness>
+        <origin>Karelia</origin>
+        <visual>
+            <color>RED</color>
+            <transparency>10</transparency>
+            <cuttingMethod>ASHER</cuttingMethod>
+        </visual>
+    </gem>
+</origin>
