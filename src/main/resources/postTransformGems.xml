@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><origin>
-    <gem>
+<?xml version="1.0" encoding="UTF-8"?>
+<origin>
+    <gem xmlns="https://example.com/gem">
         <name>Diamond</name>
         <preciousness>PRECIOUS</preciousness>
         <origin>Russia, Perm province</origin>
@@ -9,7 +10,7 @@
             <cuttingMethod>DIAMOND</cuttingMethod>
         </visual>
     </gem>
-    <gem>
+    <gem xmlns="https://example.com/gem">
         <name>Emerald</name>
         <preciousness>PRECIOUS</preciousness>
         <origin>Colombia</origin>
@@ -19,7 +20,7 @@
             <cuttingMethod>ROSE</cuttingMethod>
         </visual>
     </gem>
-    <gem>
+    <gem xmlns="https://example.com/gem">
         <name>Garnet</name>
         <preciousness>SEMIPRECIOUS</preciousness>
         <origin>Karelia</origin>
